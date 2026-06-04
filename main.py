@@ -14,11 +14,11 @@ while True:
     choice = input("Nhap lua chon cua ban(1-4): ")
     if choice == "1":
         vehicle_type = input("Nhap loai xe: ").strip().title()
-        while vehicle_type == "":
+        if vehicle_type == "":
             print("Ko de trong loai xe!")
             vehicle_type = input("Nhap lai loai xe: ").strip().title()
         owner = input("Nhap ten chu xe: ").strip().title()
-        while owner == "":
+        if owner == "":
             print("Ko duoc de trong ten chu xe!")
             owner = input("Nhap lai ten chu xe: ").strip().title()
         vehicle = {
